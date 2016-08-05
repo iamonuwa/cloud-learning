@@ -1,0 +1,23 @@
+{
+  "name": "cloud-learning",
+  "scripts": {
+  },
+  "env": {
+    "DATABASE_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "cleardb"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
